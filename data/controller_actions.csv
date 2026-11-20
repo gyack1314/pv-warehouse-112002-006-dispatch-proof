@@ -1,0 +1,6 @@
+wave,action_id,controller,point,start,end,target_mw,receipt_id,purpose
+1,A1,C4,G-18,09:00,09:11,40,R40,dispatch
+2,A2,C4,G-18,09:11,09:18,35,,protection:P03
+2,A3,C4,G-18,09:18,09:32,40,,dispatch
+2,A4,C4,G-18,09:32,09:44,60,R60,dispatch
+2,A5,C4,G-18,09:50,10:13,40,R40,dispatch

@@ -1,0 +1,5 @@
+wave,receipt_id,command,controller,kind,at,recorded
+1,R40,D40,C4,received,08:57,08:58
+1,R60,D60,C4,received,09:32,09:32
+2,R38,D38,C4,received,10:05,10:06
+4,X60,D60,C4,withdrawn,09:41,11:20

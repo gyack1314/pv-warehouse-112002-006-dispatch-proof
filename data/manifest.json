@@ -1,0 +1,106 @@
+{
+  "pack": "dispatch-proof",
+  "tables": {
+    "authority": {
+      "columns": [
+        "wave",
+        "point",
+        "desk",
+        "rank",
+        "start",
+        "end",
+        "rev"
+      ],
+      "rows": 4,
+      "sha256": "b7746ff2d5bcbc89255635e94dcc8084976a347c9cd251d024eaab6528006bfb"
+    },
+    "commands": {
+      "columns": [
+        "wave",
+        "command",
+        "point",
+        "desk",
+        "start",
+        "end",
+        "target_mw",
+        "replaces"
+      ],
+      "rows": 4,
+      "sha256": "0a508019be62d226db3deaef56db7c435bb5e9b68d0cfb9960c50a0b530d5b5c"
+    },
+    "delivery_receipts": {
+      "columns": [
+        "wave",
+        "receipt_id",
+        "command",
+        "controller",
+        "kind",
+        "at",
+        "recorded"
+      ],
+      "rows": 4,
+      "sha256": "33a6edef2290e366cecb63915b1d19a438d994f5b2be7a54da75e30057e120a2"
+    },
+    "controller_actions": {
+      "columns": [
+        "wave",
+        "action_id",
+        "controller",
+        "point",
+        "start",
+        "end",
+        "target_mw",
+        "receipt_id",
+        "purpose"
+      ],
+      "rows": 5,
+      "sha256": "814cd893929c2fb31a020b2c949b171ffcfe12f0638a6eb18113052c770435b4"
+    },
+    "meter_energy": {
+      "columns": [
+        "wave",
+        "fragment",
+        "controller",
+        "start",
+        "end",
+        "mwh"
+      ],
+      "rows": 6,
+      "sha256": "d12912ad08cadefe93c28569ffd1030bfc47e1899a0fa4f3533e50a736268aad"
+    },
+    "operator_intake": {
+      "columns": [
+        "wave",
+        "record",
+        "kind",
+        "point",
+        "start",
+        "end",
+        "action_id",
+        "receipt_id"
+      ],
+      "rows": 3,
+      "sha256": "1b23d8f9e704332517a49291573ae72263bd4ea9b9c89ab092a8740c10d4164d"
+    }
+  },
+  "references": [
+    [
+      "delivery_receipts",
+      "command",
+      "commands",
+      "command"
+    ],
+    [
+      "controller_actions",
+      "receipt_id",
+      "delivery_receipts",
+      "receipt_id"
+    ],
+    [
+      "operator_intake",
+      "action_id",
+      "controller_actions",
+      "action_id"
+    ]
+  ]
+}

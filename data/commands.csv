@@ -1,0 +1,5 @@
+wave,command,point,desk,start,end,target_mw,replaces
+1,D40,G-18,county,09:00,10:15,40,
+1,D60,G-18,central,09:20,09:45,60,D40
+2,D38,G-18,shift-B,10:05,10:25,38,
+2,P03,G-18,local-protection,09:11,09:18,35,

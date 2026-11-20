@@ -1,0 +1,4 @@
+wave,record,kind,point,start,end,action_id,receipt_id
+2,K3,claim,G-18,09:18,09:20,A3,R40
+3,S7,review,G-18,09:00,09:55,,
+3,S8,review,G-18,09:25,10:15,,
